@@ -36,7 +36,7 @@ public class DecoderableQueueImpl implements DecoderableQueue {
 	 */
 	@Override
 	public void put(DecoderElement e) throws InterruptedException {
-		queue.put(e);
+		queue.put(e);//TODO 调用notEmptyCondition.notify()
 
 		DecodeTask task = new DecodeTask(e);
 		executorService.execute(task);
@@ -72,7 +72,7 @@ public class DecoderableQueueImpl implements DecoderableQueue {
 			}
 
 		} else {
-			TimeUnit.MILLISECONDS.sleep(timeout);
+			TimeUnit.MILLISECONDS.sleep(timeout);//TODO 改用notEmptyCondition.wait(timeout)
 
 			element = queue.peek();
 
