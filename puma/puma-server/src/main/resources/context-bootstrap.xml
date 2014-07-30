@@ -7,8 +7,12 @@
     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
 	<bean name="placeholder" lazy-init="false"
-		class="com.dianping.puma.config.InitializeConfig">
-		<property name="propertiesPath" value="applicationContext.properties" />
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		 <property name="locations">
+            <list>
+                <value>classpath*:applicationContext.properties</value>
+            </list>
+        </property>
 	</bean>
 
 	<bean id="notifyService" class="com.dianping.puma.core.monitor.DefaultNotifyService"/>

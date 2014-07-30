@@ -149,6 +149,7 @@ public class ReplicationBasedServer extends AbstractServer {
     }
 
     protected void processDataEvent(BinlogEvent binlogEvent) {
+        System.out.println(">>>>> binlogEvent:"+binlogEvent);
         DataHandlerResult dataHandlerResult = null;
         // 一直处理一个binlogEvent的多行，处理完每行马上分发，以防止一个binlogEvent包含太多ChangedEvent而耗费太多内存
         do {

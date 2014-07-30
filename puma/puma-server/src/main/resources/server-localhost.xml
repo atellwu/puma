@@ -8,12 +8,12 @@
 
     <bean id="server-localhost" class="com.dianping.puma.server.ReplicationBasedServer"
         parent="notifiableBean">
-        <property name="host" value="127.0.0.1" />
+        <property name="host" value="localhost" />
         <property name="port" value="3306" />
         <property name="user" value="root" />
-        <property name="password" value="123456" />
-        <property name="defaultBinlogFileName" value="mysql-bin.000011" />
-        <property name="defaultBinlogPosition" value="491" />
+        <property name="password" value="root" />
+        <property name="defaultBinlogFileName" value="mysql-bin.000001" />
+        <property name="defaultBinlogPosition" value="107" />
         <property name="parser" ref="defaultParser-localhost" />
         <property name="serverId" value="8885" />
         <property name="dataHandler" ref="datahandler-localhost" />
@@ -53,10 +53,10 @@
 
     <bean id="tableMetasInfoFetcher-localhost"
         class="com.dianping.puma.datahandler.DefaultTableMetaInfoFetcher">
-        <property name="metaDBHost" value="127.0.0.1" />
+        <property name="metaDBHost" value="localhost" />
         <property name="metaDBPort" value="3306" />
         <property name="metaDBUser" value="root" />
-        <property name="metaDBPassword" value="123456" />
+        <property name="metaDBPassword" value="root" />
     </bean>
 
     <bean id="fileSender-localhost" class="com.dianping.puma.sender.FileDumpSender"

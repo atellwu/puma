@@ -11,8 +11,6 @@
         <module>puma-server</module>
         <module>puma-client</module>
         <module>puma-core</module>
-        <module>puma-admin</module>
-        <module>puma-syncserver</module>
     </modules>
     <description>puma</description>
     <dependencyManagement>
@@ -23,11 +21,6 @@
                 <version>2.1</version>
             </dependency>
             <dependency>
-                <groupId>com.dianping.cat</groupId>
-                <artifactId>cat-core</artifactId>
-                <version>0.6.2</version>
-            </dependency>
-            <dependency>
                 <groupId>com.dianping.puma</groupId>
                 <artifactId>puma-core</artifactId>
                 <version>0.1.1</version>
@@ -36,11 +29,6 @@
                 <groupId>com.dianping.puma</groupId>
                 <artifactId>puma-client</artifactId>
                 <version>0.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.lion</groupId>
-                <artifactId>lion-client</artifactId>
-                <version>0.2.2</version>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
@@ -81,42 +69,42 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aop</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>commons-logging</groupId>
@@ -211,7 +199,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
-                <version>3.1.1.RELEASE</version>
+                <version>3.2.2.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>c3p0</groupId>
@@ -222,28 +210,6 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>14.0.1</version>
-            </dependency>
-            <!-- swallow -->
-            <dependency>
-                <groupId>com.dianping.swallow</groupId>
-                <artifactId>swallow-producerclient</artifactId>
-                <version>0.6.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.swallow</groupId>
-                <artifactId>swallow-consumerclient</artifactId>
-                <version>0.6.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.hawk</groupId>
-                <artifactId>hawk-client</artifactId>
-                <version>0.7.1</version>
-            </dependency>
-            <!-- 远程调用Pigeon -->
-            <dependency>
-                <groupId>com.dianping.dpsf</groupId>
-                <artifactId>dpsf-net</artifactId>
-                <version>1.6.3</version>
             </dependency>
             <dependency>
 		<groupId>commons-dbutils</groupId>
